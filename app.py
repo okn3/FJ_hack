@@ -3,9 +3,7 @@ import sys
 from flask import Flask
 from flask import render_template
 sys.path.append('module')
-
 from analize import answer_msg 
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -15,6 +13,10 @@ def hello_world():
 @app.route('/top')
 def show_top():
     return render_template("top.html")
+
+@app.route('/result')
+def result():
+    return render_template("result.html")
 
 @app.route('/top/<msg>')
 def test_msg(msg):
