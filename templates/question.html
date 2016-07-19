@@ -15,14 +15,19 @@
       $.material.init();
   </script>
 </head>
-<body>
-<title>Hello from Flask</title>
+<title>Question</title>
 <h1>Genarater</h1>
-<p>***************************************</p>
-<p>***************************************</p>
-<p>***************************************</p>
 
-<a href="question" class="btn btn-raised btn-primary">Start</a>  
-<a href="result"></a>
+<div class="jumbotron" style="background-color:#FFFFFF;margin:50px;padding:50px;">
+   <h1>Question</h1>
+   <p>@@に関係がありますか？</p>
+    <a href="javascript:void(0)" class="btn btn-raised btn-default">YES</a>
+    <a href="javascript:void(0)" class="btn btn-raised btn-default">NO</a>
+</div>
 
-</body>
+<!-- progress bar -->
+<div class="progress progress-striped active">
+  <div class="progress-bar" style="width: 45%"></div>
+</div>
+
+<a href="result">result</a>

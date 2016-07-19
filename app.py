@@ -12,6 +12,11 @@ app = Flask(__name__)
 def show_top():
     return render_template("top.html")
 
+# 分析ページ
+@app.route('/question')
+def question():
+    return render_template("question.html")
+
 # 結果ページ
 @app.route('/result')
 def result():
